@@ -1,0 +1,206 @@
+
+*{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.alerta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(0, 100, 255,.5);
+    /* height: 40px; */
+    /* padding-top:50px; */
+    color: rgb(0, 0, 103);
+}
+.alerta h2{
+    height: 40px;
+    width:40%;
+    font-size: 20px;
+    line-height: 30px;
+    /* background-color: aqua; */
+}
+.alerta img{
+    width:60px;
+    /* height:50px */
+    /* line-height: 20px; */
+}
+.padre p{
+    position: absolute;
+}
+.center{
+    position: relative;
+
+    margin: auto;
+    /* text-align: center; */
+    /* background-color: blue; */
+    /* transform: rotate(45deg); */
+    /* padding: 10px; */
+    height:70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: rodar infinite linear 20s; */
+}
+.pl{
+    padding-left: 5%;
+}
+#circle span{
+    position: absolute;
+    top: -5px;
+    left:15px;
+    right: 0;
+    bottom: 0;
+
+    height:40px;
+    width:40px;
+    transform-origin:bottom center;
+    text-align: center;
+    font-size: 12px;
+    color:rgb(22, 69, 120);
+    letter-spacing: 2px;
+    /* background-color: rgb(255, 0, 0,.1); */
+    /* animation: rodar infinite linear 3s; */
+
+}
+.p{
+    /* animation: rodar_p infinite linear 20s; */
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.p img{
+    width:60%;
+    height:60%
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color:aliceblue;
+    margin: 0;
+}
+.navbar a{
+    color: rgb(0, 100, 255) !important;
+    font-size: 25px;
+    margin: 0;
+
+}
+/* header */
+.header{
+    /* background-color: rgb(127, 127, 247); */
+    background-image:linear-gradient(rgb(0, 0, 255,.8),rgb(0, 0, 255,.8),rgb(0, 0, 255,.8)), url(imagenes/staff.png.crdownload);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 10px 0;
+}
+.header_texto{
+    width:80%;
+    /* background-color: rgb(127, 127, 247); */
+    margin: 10px auto;
+    padding: 10px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    color: aliceblue;
+}
+.header_texto p{
+    font-size: 20px;
+}
+.text_btn{
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+/* servicios */
+.servicios{
+    /* background-color: aqua; */
+    margin: 10px auto;
+    padding: 10px;
+}
+/* aserca */
+.aserca{
+/* background-color: antiquewhite; */
+margin: 20px auto;
+padding: 20px ;
+}
+/* contacto */
+.contacto{
+    /* background-color: bisque; */
+    margin: 20px auto;
+    padding: 20px;
+}
+.contacto li{
+    list-style: none;
+}
+.contacto li i{
+    font-size: 25px;
+    /* color:blue */
+}
+.w{
+    color: green;
+}
+.c{
+    color: rgb(249, 148, 65);
+}
+.f{
+    color: blue;
+}
+.servicios h3,
+.aserca h3,
+.contacto h3{
+    background-color: rgb(0, 100, 250,.1);
+    width: 100%;
+    padding: 10px 20px;
+}
+/* footer */
+.footer{
+    background-color: rgb(0, 100, 250,.5);
+    margin: 10px auto;
+    padding: 20px;
+}
+.footer p{
+    text-align: center;
+    font-size: 20px;
+    /* background-color: aliceblue; */
+    margin: 0;
+    padding: 0;
+}
+.footer a{
+    color: blue;
+    font-size: 18px;
+    font-style: italic;
+}
+@keyframes rodar{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes rodar_p{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+@media (max-width:567px){
+    .alerta{
+        /* height: 50px; */
+        padding: 0px;
+    }
+    .alerta h2{
+        width:100%;
+        text-align: center;
+    }
+    .header_texto{
+        width: 100%;
+    }
+    .np{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
