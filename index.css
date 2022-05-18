@@ -274,6 +274,9 @@ padding: 20px ;
     .alerta p{
         padding-right: 5%;
     }
+    .w-1{
+        margin-top: 20px;
+    }
     .header_texto{
         width: 100%;
     }
